@@ -1,0 +1,40 @@
+# ==========================================================
+# AI-Powered Smart Road Infrastructure Monitoring System
+# Python dependencies (configured for Streamlit Community Cloud)
+# ==========================================================
+
+# Install CPU-only PyTorch from the official CPU index to reduce install
+# size / memory footprint on hosted environments.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.2.0
+
+# ---- YOLO / Computer Vision ----
+ultralytics>=8.4.0
+# Headless OpenCV: the standard opencv-python pulls GUI libraries that fail
+# on servers without a display. Use -headless for any hosted deployment.
+opencv-python-headless>=4.10.0
+
+# ---- Core Data / Numerics ----
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.13.0
+
+# ---- Dashboard ----
+streamlit>=1.35.0
+plotly>=5.22.0
+streamlit-autorefresh>=1.0.1
+
+# ---- GIS / Maps ----
+geopy>=2.4.1
+folium>=0.17.0
+streamlit-folium>=0.22.0
+
+# ---- Database ----
+SQLAlchemy>=2.0.0
+
+# ---- Reporting ----
+reportlab>=4.2.0
+
+# ---- Utilities ----
+python-dotenv>=1.0.1
+Pillow>=10.0.0
